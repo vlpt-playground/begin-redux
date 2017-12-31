@@ -1,0 +1,17 @@
+.app-template {
+  height: 100vh;
+  display: flex;
+}
+
+.counter, .todos {
+  flex: 1;
+  padding: 1rem;
+}
+
+.counter {
+  background: #f1f3f5;
+}
+
+.todos {
+  background: #f8f9fa;
+}
