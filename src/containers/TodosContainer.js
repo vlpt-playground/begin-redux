@@ -48,11 +48,10 @@ class TodosContainer extends Component {
 }
 
 export default connect(
-  // state 를 비구조화 할당 해주었습니다
   ({ todo }) => ({
-    // immutable 을 사용하니, 값을 조회 할 때엔느 .get 을 사용해주어야하죠.
-    input: todo.get('input'),
-    todos: todo.get('todos')
+    // 일반 객체 다루듯이 다루면 됩니다.
+    input: todo.input,
+    todos: todo.todos
   }),
   (dispatch) => ({
     TodoActions: bindActionCreators(todoActions, dispatch)

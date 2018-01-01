@@ -16,7 +16,7 @@ const Todos = ({todos, input, onInsert, onToggle, onRemove, onChange }) => {
   
   const todoItems = todos.map(
     todo => {
-      const { id, checked, text } = todo.toJS();
+      const { id, checked, text } = todo;
       return (
         <TodoItem
           id={id}
