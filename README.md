@@ -2,6 +2,15 @@
 
 리덕스 시작하기 튜토리얼 전용 템플릿
 
+이 프로젝트는 총 6가지의 Branch 로 나뉘어져있습니다:
+
+- [template](https://github.com/vlpt-playground/begin-redux/tree/template): 실습을 빠르게 진행하기 위한 템플릿
+- [01](https://github.com/vlpt-playground/begin-redux/tree/01): 카운터 (기본)
+- [02](https://github.com/vlpt-playground/begin-redux/tree/02): 카운터 (코드 정리)
+- [03](https://github.com/vlpt-playground/begin-redux/tree/03): 투두리스트 (기본)
+- [04](https://github.com/vlpt-playground/begin-redux/tree/04): 투두리스트 (Immutable Record 사용)
+- [05](https://github.com/vlpt-playground/begin-redux/tree/04): actionCreator 미리 bind하기
+
 ## 템플릿에 이미 이뤄진 작업:
 
 ### 0. 절대경로에서 파일을 불러 올 수 있도록 설정
