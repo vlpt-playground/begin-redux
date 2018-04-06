@@ -1,4 +1,5 @@
 import { createAction, handleActions } from 'redux-actions';
+import produce from 'immer';
 
 // 액션 타입을 정의해줍니다.
 const INCREMENT = 'counter/INCREMENT';
@@ -13,13 +14,16 @@ const initialState = {
   number: 0
 };
 
-// handleActions 의 첫번째 파라미터는 액션을 처리하는 함수들로 이뤄진 객체이고
-// 두번째 파라미터는 초기 상태입니다.
+
+// immer 를 사용하여 값을 수정하는 리듀서입니다.
 export default handleActions({
   [INCREMENT]: (state, action) => {
-    return { number: state.number + 1 };
+    return produce(state, draft => {
+      draft.number++;
+    });
   },
-  // action 객체를 참조하지 않으니까 이렇게 생략을 할 수도 있겠죠?
-  // state 부분에서 비구조화 할당도 해주어서 코드를 더욱 간소화시켰습니다.
-  [DECREMENT]: ({ number }) => ({ number: number - 1 })
+  // { } 를 따로 열지 않고 바로 리턴하면 이런 형식입니다.
+  [DECREMENT]: (state, action) => produce(state, draft => {
+    draft.number--;
+  }),
 }, initialState);
