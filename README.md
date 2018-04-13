@@ -9,7 +9,8 @@
 - [02](https://github.com/vlpt-playground/begin-redux/tree/02): 카운터 (코드 정리)
 - [03](https://github.com/vlpt-playground/begin-redux/tree/03): 투두리스트 (기본)
 - [04](https://github.com/vlpt-playground/begin-redux/tree/04): 투두리스트 (Immutable Record 사용)
-- [05](https://github.com/vlpt-playground/begin-redux/tree/04): actionCreator 미리 bind하기
+- [05](https://github.com/vlpt-playground/begin-redux/tree/05): actionCreator 미리 bind하기
+- [06](https://github.com/vlpt-playground/begin-redux/tree/06): immer.js 사용해보기
 
 ## 템플릿에 이미 이뤄진 작업:
 
