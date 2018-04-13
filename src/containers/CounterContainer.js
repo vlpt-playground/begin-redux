@@ -1,22 +1,28 @@
 import React, { Component } from 'react';
 import Counter from '../components/Counter';
-import { observer } from 'mobx-react';
+import { observer, inject } from 'mobx-react';
 import { observable } from 'mobx';
 
+@inject(stores => {
+  return {
+    number: stores.counter.number,
+    increase: stores.counter.increase,
+    decrease: stores.counter.decrease
+  };
+})
 @observer
 class CounterContainer extends Component {
-  @observable number = 0;
-
   handleIncrement = () => {
-    this.number += 1;
+    this.props.increase();
   };
 
   handleDecrement = () => {
-    this.number -= 1;
+    this.props.decrease();
   };
 
   render() {
-    const { number, handleIncrement, handleDecrement } = this;
+    const { number } = this.props;
+    const { handleIncrement, handleDecrement } = this;
     return (
       <Counter
         number={number}
