@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { observable } from 'mobx';
 import { observer, inject } from 'mobx-react';
 import Todos from '../components/Todos';
 
