@@ -31,7 +31,7 @@ class TodoList extends Component {
     return (
       <div>
         <Todos
-          todos={todos.todos.slice()}
+          todos={todos.todos}
           input={todos.input}
           onChange={this.handleChange}
           onInsert={this.handleInsert}
