@@ -11,6 +11,8 @@
 - [04](https://github.com/vlpt-playground/begin-redux/tree/04): 투두리스트 (Immutable Record 사용)
 - [05](https://github.com/vlpt-playground/begin-redux/tree/05): actionCreator 미리 bind하기
 - [06](https://github.com/vlpt-playground/begin-redux/tree/06): immer.js 사용해보기
+- [07](https://github.com/vlpt-playground/begin-redux/tree/06): MobX 로 구현해보기
+- [08](https://github.com/vlpt-playground/begin-redux/tree/06): MobX 로 구현해보기 (Store 분리)
 
 ## 템플릿에 이미 이뤄진 작업:
 
